@@ -1,0 +1,724 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: rgb(0, 0, 0);
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  background: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar { 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#navbar li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: rgb(92, 16, 16);
+  font-size: 19px;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  width: 30%;
+  height: 2px;
+  background: rgb(92, 16, 16);
+  position: absolute;
+  font-size: 19px;
+}
+
+#mobile{
+  display: none;
+  align-items: center;
+}
+
+#close{
+  display: none;
+}
+
+#hero {
+  background-image: url("Images/Danzo hoodie.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h2 {
+  padding-bottom: 15px;
+  color:rgb(92, 16, 16)
+}
+
+#hero button {
+  background-color: white;
+  color: rgb(92, 16, 16);
+  border: 3px solid white;
+  border-radius: 30px;
+  padding: 14px 30px 14px 30px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+#hero h1{
+  color :white;
+  text-shadow: 3px 3px rgb(92, 16, 16);
+}
+
+#hero button:hover,
+#hero button.active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(92, 16, 16);
+  border: 3px solid rgb(92, 16, 16);
+}
+
+#product1 {
+  text-align: center;
+  align-items: center;
+  background-color: black;
+}
+
+#product1 .pro-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+#product1 .pro{
+  width:23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border:1px solid rgb(92, 16, 16);
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 100px rgba(91, 15, 15, 0.1);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#product1 .pro:hover {
+  box-shadow: 0px 0px 60px rgba(215, 38, 38, 0.25);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: black;
+  font-size: 14px;
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(92, 16, 16);
+  padding-bottom: 10px;
+}
+
+#product1 h2 {
+  color: white;
+}
+
+#product1 button {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: black;
+  font-weight: 750;
+  color: white;
+  border: 1px solid rgb(92, 16, 16);
+  margin-top: auto;
+  align-self: center;
+}
+
+#product1 button:hover,
+#product1 button.active {
+color: rgb(92, 16, 16);
+}
+
+#product1 .sel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#product1 select {
+  color:white;
+  background-color: black;
+  line-height: 40px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgb(92, 16, 16);
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#product1 select:hover,
+#product1 select.active {
+color: rgb(92, 16, 16);
+}
+
+#banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("Images/flame-person.jpg"), url("Images/fire-breath.jpg");
+  background-position: 0% 80%, 100% 20%;
+  width: 100%;
+  height: 30vh;
+  background-size: 355px, 1200px;
+  background-repeat: no-repeat, no-repeat;
+  background-color: black;
+}
+
+#banner h4 {
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+  text-shadow: 3px 3px rgb(92, 16, 16);
+
+}
+
+#banner h2 {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  padding: 10px 0px;
+  flex-wrap: wrap ;
+  text-shadow: 3px 3px rgb(92, 16, 16);
+
+}
+
+#banner h2 span {
+  color: rgb(92, 16, 16);
+  text-shadow: 3px 3px rgb(255, 255, 255);
+  flex-wrap: wrap ;
+}
+
+#banner .socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+#banner a {
+  margin: 8px;
+  padding: 2px;
+  text-shadow: 0 0 10px #606063;
+  
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(Images/white-dragon-banner.png);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+#newsletter h4 {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(92, 16, 16);
+  text-shadow: rgb(22, 4, 4) 0px 0 10px;
+}
+
+#newsletter p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(92, 16, 16);
+  text-shadow: rgb(22, 4, 4) 0px 0 10px;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px;
+  border-radius: 4px;
+  outline:none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+  background-color:rgb(92, 16, 16);
+  color: black;
+  font-size:100%;
+  font-weight: 900;
+  white-space: nowrap;
+  border: 1px;
+  border-radius: 4px;
+  outline:none;
+  width: 20%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex-wrap: wrap ;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+}
+
+footer a {
+  padding: 0px 7px;
+  color: white;
+}
+
+footer img {
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+footer p {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 10px;
+  color: white;
+}
+
+/* Media Queries */
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+  #header {
+    padding: 15px 20px;
+  }
+  
+  #hero {
+    padding: 0 20px;
+  }
+  
+  #newsletter .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  #newsletter input {
+    width: calc(100% - 80px);
+  }
+  #banner {
+    background-size:contain, 60% 160%; /* Adjust background size */
+  }
+
+  #banner h4 {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  #banner h2 {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  #product1 .pro-container {
+    min-width: auto; /* Adjust min-width */
+    height:auto;
+  }
+  #header h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  #header h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  /* Newsletter */
+  #newsletter h4 {
+    font-size: 32px;
+  }
+  
+  #newsletter p {
+    font-size: 16px;
+  }
+  
+  /* Footer */
+  footer h4 {
+    font-size: 20px;
+  }
+  
+  footer p {
+    font-size: 12px;
+  }  
+
+  #newsletter button{
+    font-size: 18px;
+  }
+  
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  #header {
+    padding: 15px;
+  }
+  
+  #navbar li {
+    padding: 0 10px;
+  }
+  
+  #hero {
+    padding: 0 10px;
+  }
+  
+  #newsletter .form {
+    padding: 0 10px;
+  }
+
+  #banner {
+    background-size:contain, 40% 160%; /* Adjust background size */
+  }
+
+  #banner h4 {
+    font-size: 10px; /* Adjust font size */
+  }
+
+  #banner h2 {
+    font-size: 22px; /* Adjust font size */
+  }
+
+  #product1 .pro-container {
+    min-width: auto; /* Adjust min-width */
+    height:auto;
+    width: 20px;
+
+  }
+  
+  #header h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  #banner .socials {
+    width:fit-content;
+    height:fit-content;
+  }
+
+  #newsletter button{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 803px) {
+
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right:-300px;
+    height:100vh;
+    width:300px;
+    background-color: black;
+    box-shadow: 0 40px 60px rgba(255, 255, 255, 0.1);
+    padding:80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active{
+    right:0;
+  }
+
+  #navbar li{
+    margin-bottom: 25px;
+  }
+
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: white;
+    font-size:30px;
+    padding-left: 20px;
+  }
+
+  #mobile i:hover,
+  #mobile i.active {
+  color: rgb(92, 16, 16);
+  font-size: 30px;
+  }
+
+  #close{
+    position: absolute;
+    display:initial;
+    top: 30px;
+    left: 30px;
+    color: white;
+    font-size: 24px;
+  }
+}
+
+#contact label{
+  color: white;
+}
+
+#contact input[type=text], 
+#contact select, 
+#contact textarea {
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px;
+}
+
+#contact input[type=submit]{
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 1000;
+}
+
+#contact input[type=submit]:hover {
+  background-color:rgb(92, 16, 16);
+  color: white;
+}
+
+#contact .container {
+  background-color: black;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; 
+}
+
+#help{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  }
+
+  
+#help h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: rgb(92, 16, 16);
+
+  }
+
+#help h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  #ship{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #ship h1{
+    color: white;
+    font-size: 40px;
+  }
+
+  #ship h2{
+    color: white;
+    font-size: 20px;
+    width:900px;
+  }
+  #ship h6{
+    color: rgb(92, 16, 16);
+    font-size: 55px;
+    text-shadow: rgb(22, 4, 4) 0px 0 10px;  }
+
+  #about h6{
+    color:rgb(92, 16, 16);
+    font-size: 55px;
+    align-items: center;
+    text-shadow: rgb(22, 4, 4) 0px 0 10px;  
+  }
+
+  #about{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align:start;
+    flex-direction: column;
+    text-indent: 60px;
+  }
+
+  #about h1{
+    color: white;
+    font-size: 18px;
+    width:900px;
+  }
+
+  #shop {
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    text-align:start;
+    flex-direction: column;
+  }
+
+  #shop #product1{
+    background-image: url("Images/n.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  #shop h2{
+    color: rgb(92, 16, 16);
+    font-size: 55px;
+    text-shadow: rgb(22, 4, 4) 0px 0 10px;
+    padding-bottom: 10px;
+  }

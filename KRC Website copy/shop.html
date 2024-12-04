@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <script src="https://kit.fontawesome.com/14288dfa20.js" crossorigin="anonymous"></script>        
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id= "header">
+            <a href="#"><img src="Images/Screen Shot 2024-03-15 at 6.11.32 PM.png" class="logo" alt="" width="100" height="65"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shipping.html">Shipping</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+
+        <section id="shop" >
+            <h2>All Products</h2>
+            <section id="product1" class= "section-p1">
+                <!-- <p>Summer Collection</p> -->
+                <div class="pro-container">
+                    <div class="pro">
+                        <img src="Images/Danzo hoodie.png" alt="">
+                        <div class="sel">
+                            <div class="des">
+                                <!-- <span>New</span> -->
+                                <h5> Danzo Hoodie</h5>
+                                <h4>$70</h4>    
+                            </div>
+                            <select name="sizes" id="sizes" required>
+                                <option value="" disabled selected>Sizes</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+        </section>
+            <section id= "newsletter" class= "section-p1">
+                <div class="newstext">
+                    <h4>Dive into the Dragon's Den!</h4>
+                    <p>Don't miss out on new drops, deals, and sneak peaks on future drops!
+                    </p>
+                </div>    
+                <div class="form">
+                    <input type="text" placeholder="Email Address">
+                    <button class="normal">Sign Up</button>
+                </div>
+    
+            </section>
+    
+            <footer class= "section-p1">
+                <div class="col">
+                    <img src="Images/Screen Shot 2024-03-15 at 6.11.32 PM.png" class="logo" alt="" width="130" height="90">
+                </div>
+                <div class="About">
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms Of Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2024 Kage Ryu Clothing</p>
+                </div>
+            </footer>
+
+        
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
